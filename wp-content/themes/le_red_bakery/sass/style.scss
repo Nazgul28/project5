@@ -64,11 +64,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 @import "header";
-@import "footer";
+// @import "footer";
 
 
-// Why it's not working?
-.content-area {
-				background-image: url ('../images/hero-bread.jpg');
 
-}

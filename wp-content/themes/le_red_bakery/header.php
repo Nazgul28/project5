@@ -24,7 +24,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 				</div>
 				<div class="headerbox">
 					<div class= "logoheader">
@@ -34,6 +34,7 @@
 							<i class="fa fa-facebook"></i>
 							<i class="fa fa-twitter"></i>
 							<i class="fa fa-google-plus"></i>
+							<i class="fa fa-envelope"></i>
 					</div>
 				</div>
 				<!-- .site-branding -->

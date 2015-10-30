@@ -3,3 +3,19 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.hero {
+	background: url(../../images/hero-bread.jpg) center no-repeat;
+	justify-content: center;
+	height:550px;
+	margin-bottom: 3rem;
+	display:flex;
+	width:100%;
+	align-items: center;
+
+	 h1{
+		color: white;
+		font-family: $font__headline;
+		font-size: 6rem;
+		text-transform: uppercase;
+	}
+}

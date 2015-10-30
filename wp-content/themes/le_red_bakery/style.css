@@ -708,9 +708,29 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.hero {
+  background: url(../../images/hero-bread.jpg) center no-repeat;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 550px;
+  margin-bottom: 3rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .hero h1 {
+    color: white;
+    font-family: "Overlock", sans-serif;
+    font-size: 6rem;
+    text-transform: uppercase; }
+
 header {
   width: 100vw;
-  padding-left: 1rem; }
+  border: 1px solid #e1e1e1; }
 
 .logo {
   width: 300px; }
@@ -719,11 +739,9 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   width: 100%;
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
   .headerbox .socialmediaheader {
     margin: 0 auto;
     padding-top: 1.5rem;
@@ -731,27 +749,23 @@ header {
     .headerbox .socialmediaheader i {
       padding-right: 1.5rem; }
 
-.menu-header-menu-container {
-  padding-top: 5px; }
-
 .main-navigation {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   width: 100%;
-  padding-bottom: 1.5rem; }
-  .main-navigation ul li {
-    padding-right: 3rem;
-    border: 1px solid grey; }
-    .main-navigation ul li a {
-      padding-left: 1.5rem;
-      color: grey;
-      font-weight: bold; }
-  .main-navigation form {
-    margin: 0 auto; }
+  margin-top: 1.5em;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 0px;
+  background: white; }
 
-.content-area {
-  background-image: url "../images/hero-bread.jpg"; }
+.main-navigation li:first-child {
+  border-left: 1px solid #e1e1e1; }
+
+.main-navigation li {
+  border-right: 1px solid #e1e1e1; }
+
+.main-navigation li a {
+  padding: .75rem 1.5rem;
+  color: #a1a1a1; }
+
+form {
+  margin: 0 auto; }
