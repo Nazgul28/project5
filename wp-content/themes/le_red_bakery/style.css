@@ -728,6 +728,29 @@ object {
     font-size: 6rem;
     text-transform: uppercase; }
 
+.products {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase; }
+  .products .bread {
+    text-align: center; }
+  .products .coffee {
+    text-align: center; }
+  .products .pretzels {
+    text-align: center; }
+  .products .sweets {
+    text-align: center; }
+    .products .sweets img {
+      padding-bottom: 2rem; }
+
 header {
   width: 100vw;
   border: 1px solid #e1e1e1; }
@@ -740,14 +763,18 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
   .headerbox .socialmediaheader {
     margin: 0 auto;
     padding-top: 1.5rem;
-    padding-left: 10rem; }
+    padding-left: 35rem; }
     .headerbox .socialmediaheader i {
-      padding-right: 1.5rem; }
+      padding-right: 1.5rem;
+      color: #808080; }
 
 .main-navigation {
   width: 100%;
@@ -761,11 +788,62 @@ header {
   border-left: 1px solid #e1e1e1; }
 
 .main-navigation li {
-  border-right: 1px solid #e1e1e1; }
+  border-right: 1px solid #e1e1e1;
+  color: #808080;
+  font-weight: bold; }
 
 .main-navigation li a {
   padding: .75rem 1.5rem;
-  color: #a1a1a1; }
+  color: #808080; }
 
 form {
   margin: 0 auto; }
+
+.footerbox {
+  background-color: #222222;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem; }
+  .footerbox h2 {
+    text-transform: uppercase;
+    font-size: 1.25rem; }
+  .footerbox p {
+    color: white; }
+  .footerbox a {
+    color: white;
+    text-decoration: none; }
+  .footerbox i {
+    color: white;
+    padding-right: 0.5rem; }
+  .footerbox .days {
+    font-weight: bold; }
+
+.site-info {
+  background-color: #333333;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .site-info span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    color: white; }

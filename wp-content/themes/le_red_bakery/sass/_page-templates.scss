@@ -19,3 +19,30 @@
 		text-transform: uppercase;
 	}
 }
+
+.products{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+
+	.bread{
+		text-align: center;
+	}
+
+	.coffee {
+		text-align: center;
+	}
+
+	.pretzels {
+		text-align: center;
+	}
+	.sweets{
+		text-align: center;
+		img {
+			padding-bottom: 2rem;
+		}
+	}
+
+}

@@ -1,0 +1,47 @@
+
+
+.footerbox{
+	background-color: $color__black-brand;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-family: $font__main;
+	font-size: 1rem;
+	line-height: 1rem;
+
+	h2{ text-transform: uppercase;
+		font-size: 1.25rem;
+	}
+
+	p{
+		color:white;
+	}
+	a{	color: white;
+		text-decoration: none;
+	}
+	i{
+		color: white;
+		padding-right: 0.5rem;
+	}
+
+	.days{
+		font-weight: bold;
+	}
+}
+
+.site-info{
+	background-color: $color__dark-grey-brand;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+	span{
+		font-family: $font__main;
+		font-size: 10px;
+		color: white;
+	}
+
+}
