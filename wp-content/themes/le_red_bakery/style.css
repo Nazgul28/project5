@@ -751,6 +751,65 @@ object {
     .products .sweets img {
       padding-bottom: 2rem; }
 
+/* latest news */
+.latestnews {
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  padding: 3rem 0;
+  background-color: #fafafa; }
+  .latestnews h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: "Overlock", sans-serif; }
+
+.container {
+  background-color: white;
+  border-bottom: 0px;
+  border-top: 0px; }
+
+.post-page {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0px;
+  padding-left: 0px; }
+  .post-page li {
+    list-style: none;
+    -webkit-flex: 1 0 25%;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%;
+    max-width: 25%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #808080;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    line-height: 1.5;
+    border-top: 10px; }
+
+.postthumbnail {
+  height: 165px;
+  width: 257px;
+  overflow: hidden;
+  position: relative; }
+
+.post-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center; }
+  .post-info a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 700; }
+
 header {
   width: 100vw;
   border: 1px solid #e1e1e1; }
@@ -798,6 +857,9 @@ header {
 
 form {
   margin: 0 auto; }
+
+#search-input {
+  border: none; }
 
 .footerbox {
   background-color: #222222;

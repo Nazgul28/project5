@@ -47,3 +47,15 @@ function le_red_bakery_login_url_title() {
     return 'Le Red Bakery';
 }
 add_filter( 'login_headertitle', 'le_red_bakery_login_url_title' );
+
+
+
+function lrb_modify_archive_queries ($query) {
+    if (is_post_type_archive (array('product')) && !is_admin() && $query-> is_main_query()) {
+        $query->set ('orderby', 'title');
+        $query->set ('order', 'ASC');
+        $query->set ('posts_per_page', 12);
+    }
+}
+add_action ('pre_get_posts', 'lrb_modify_archive_queries');
+
