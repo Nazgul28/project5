@@ -14,28 +14,20 @@ get_header(); ?>
 			<span class="herotext"><h1>baked to perfection.</h1></span>
 		</div>
 		<div class="products">
-			<div class="bread">
-				<img class="bread" src="<?php echo get_template_directory_uri(); ?>/images/bread.png"/>
-				<h2> bread </h2>
-				<p> Bread is the ultimate comfort food! Our lust-worthy loaves will satisfy your most intense carb cravings.</p>
-				<a href="<?php echo get_permalink( get_page_by_path( ‘products’ ) ) ?>">See more ...</a>
-			</div>
-
-			<div class="coffee">
-				<img class="coffee" src="<?php echo get_template_directory_uri(); ?>/images/coffee.png"/>
-				<p> Start your day with decadent cup o' joe, or pop in for a mid-afternoon pick me up. Caffeine FTW.</p>
-				<h2> coffee </h2>
-			</div>
-			<div class="pretzels">
-				<img class="pretzels" src="<?php echo get_template_directory_uri(); ?>/images/pretzels.png"/>
-				<p>Our soft-pretzels are available in a variety of flavours. When they taste this good, one is never enough!</p>
-				<h2> pretzels </h2>
-			</div>
-			<div class="sweets">
-				<img class="sweets" src="<?php echo get_template_directory_uri(); ?>/images/sweets.png"/>
-				<h2> sweets </h2>
-				<p>Our sinfully delicious sweets are simply irresistible! These gourmet treats will keep you coming back.</p>
-			</div>
+				<?php 
+					$taxonomy = 'product-type';
+					$terms = get_terms($taxonomy);
+					if ($terms) :
+					 foreach($terms as $term) :
+					 ?> 
+					 <div class="product-type">
+						 <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $term->slug;?>.png"/> 
+						   <h3><?php echo $term->name;?></h3>
+						   		<p><?php echo $term->description;?><a href="<?php echo get_term_link($term); ?>">See more...</a></p>
+					 </div>	
+					<?php endforeach; 
+					?>
+				<?php endif; ?>
 		</div>
 
 		<section class="warning">
@@ -51,7 +43,7 @@ get_header(); ?>
 				foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 					<li>
 						<div class="postthumbnail">
-							<?php the_post_thumbnail('medium'); ?>
+							<?php the_post_thumbnail(); ?>
 						</div> 
 						<div class="post-info">
 							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></br>

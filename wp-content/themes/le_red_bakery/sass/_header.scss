@@ -1,12 +1,6 @@
 
 
-header{
-width: 100vw;
-// padding-left: 1rem;
-border: 1px solid #e1e1e1;
-
-}
-
+// Header Css
 
 .logo{
 width:300px;
@@ -18,10 +12,11 @@ width:300px;
 	justify-content: space-around;
 	padding-top:1.5rem;
 	padding-bottom: 1.5rem;
+	padding-left: 1rem;
 .socialmediaheader{
 	margin: 0 auto;
 	padding-top: 1.5rem;
-	padding-left: 35rem;
+	padding-left: 49rem;
 	i{
 		padding-right: 1.5rem;
 		color:$color__medium-grey-brand;
@@ -32,6 +27,7 @@ width:300px;
 
 .main-navigation{
 
+	// @include container;
 	width: 100%;
 	margin-top: $base__space-unit;
 	border-bottom: 1px solid #e1e1e1;
@@ -72,8 +68,17 @@ border-left: 1px solid #e1e1e1;
 // 	}
 // }
 
-form{
-margin: 0 auto;
+#search-form{
+// @include container;
+display: block;
+text-align: right;
+padding-top: 1rem;
+
+i{ padding-right: 2rem; 
+	color:$color__medium-grey-brand;
+
+}
+// margin: 0 auto;
 }
 
 #search-input{

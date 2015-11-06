@@ -30,7 +30,7 @@
 					</div>
 				</div>
 				<div class="site-info">
-					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
+					
 				<span class="copyright"><p>Copyright &copy; 2015 Le Red Bread </p></span>
 
 				</div><!-- .site-info -->

@@ -6,8 +6,8 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
+	<div class="site-wrapper">
+	<div id="primary-1" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>

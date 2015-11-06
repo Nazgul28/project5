@@ -3,6 +3,11 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.site-navigation{
+@include container;
+}
+
 .hero {
 	background: url(../../images/hero-bread.jpg) center no-repeat;
 	justify-content: center;
@@ -20,28 +25,26 @@
 	}
 }
 
+
+
+// Products / taxonomy 
+
 .products{
 	display: flex;
-	width: 100%;
+	@include container;
+	// width: 100%;
 	justify-content: space-around;
 	align-items: center;
 	text-transform: uppercase;
 
-	.bread{
+	.product-type{
 		text-align: center;
-	}
-
-	.coffee {
-		text-align: center;
-	}
-
-	.pretzels {
-		text-align: center;
-	}
-	.sweets{
-		text-align: center;
-		img {
-			padding-bottom: 2rem;
+		line-height: 1.5rem;
+		font-family: $font__headline;
+		a{
+			color: red;
+			text-decoration: none;
+			text-transform: none;
 		}
 	}
 
@@ -71,16 +74,14 @@
 
 .post-page{
 	display: flex;
+	@include container;
 	justify-content: space-between;
-	align-items: center;
-	margin-left: 0px;
-	padding-left: 0px;
 
 	li{
-	// align-items: center;
+	align-items: center;
 	list-style: none;
 	flex:1 0 25%;
-	max-width: 25%;
+	width: 25%;
 	font-family: $font__main;
 	font-size:1rem;
 	color: $color__medium-grey-brand;
@@ -88,30 +89,118 @@
 	background-color: #fff;
 	line-height: 1.5;
 	border-top: 10px;
+	img{
+		height: 200px;
+		overflow: hidden;
+		width:100%;
+
+	}
 }
 }
 
-.postthumbnail{
-height: 165px;
-width: 257px;
-overflow: hidden;
-position: relative;
-}
+// .postthumbnail{
+// height: 200px;
+// // width: 316px;
+// overflow: hidden;
+// // position: relative;
+// }
 
 .post-info{
 	// border: 1px solid #e1e1e1;
 	font-family: $font__main;
 	font-size: 1rem;
 	line-height: 1.5;
-	text-align: center;
+	display: block;
+	width: 250px;
+	padding-left: 10px;
+	// text-align: center;
+
+	// text-overflow: ellipsis;
 	// color:$color__medium-grey-brand;
 
 	a{
 		text-decoration: none;
 		color: grey;
 		font-weight: 700;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: block;
+		text-align: left;
+
 	}
 
+}
+
+// Contact page
+
+.site-wrapper{
+	display: flex;
+	@include container;
+
+}
+
+#primary-1 {
+font-family: $font__main;
+font-size: 1rem;
+line-height: 1.5;
+color:$color__text-main;
+width:73%;
+border-right: 1px solid #e1e1e1;
+
+}
+
+.widget-area{
+width: 27%;
+padding-left: 5%; 
+
+	a{text-decoration: none;
+		color:red;}
+}
+
+	 ul{
+		list-style: none;
+		padding-left: 0px;
+		margin: 0 auto;
+		line-height: 2rem;
+
+		a{ 
+		text-decoration: none;
+		color:red;
+
+}
+}
+
+
+// Taxonomy-product-type page
+
+.taxonomy-product-type{
+display: flex;
+@include container;
+}
+
+
+// Single Posts page
+
+.wrapper-single-posts{
+display: flex;
+@include container;
+}
+
+
+//Single Product page
+
+.wrapper-single-product{
+display: flex;
+@include container;
+
+}
+
+// Blog Page
+
+.blogposts{
+display: flex;
+@include container;
 }
 
 

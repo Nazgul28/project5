@@ -1,15 +1,24 @@
 
 
-.footerbox{
+
+.site-footer{
 	background-color: $color__black-brand;
+
+}
+.footerbox{
+	@include container;
+	// margin-left: auto;
+	// margin-right: auto;
+	// width: 100%;
+	// background-color: $color__black-brand;
 	display: flex;
-	width: 100%;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	font-family: $font__main;
 	font-size: 1rem;
 	line-height: 1rem;
+
 
 	h2{ text-transform: uppercase;
 		font-size: 1.25rem;
