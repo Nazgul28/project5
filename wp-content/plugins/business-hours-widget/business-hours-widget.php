@@ -6,18 +6,18 @@
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   Widget_Name
- * @author    Luis <lfmassola@gmail.com>
+ * @package   LRB_Business_Hours
+ * @author    Luis Massola <lfmassola@gmail.com>
  * @license   GPL-2.0+
  * @link      http://redacademy.com
  * @copyright 2015 Le Red Bakery
  *
  * @wordpress-plugin
- * Plugin Name:       Le Red Bakery Business Hours Widget
+ * Plugin Name:       Le Red Bread Business Hours
  * Plugin URI:        http://redacademy.com
- * Description:       A little business hours widget fot the Le Red Bakery.
+ * Description:       A little business hours widget for the Le Red Bakery
  * Version:           1.0.0
- * Author:            Luis
+ * Author:            Luis Massola
  * Author URI:        http://redacademy.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -28,8 +28,8 @@ if ( ! defined ( 'ABSPATH' ) ) {
 	exit;
 }
 
-// TODO: change 'Widget_Name' to the name of your plugin
-class Widget_Name extends WP_Widget {
+// TODO: change 'LRB_Business_Hours' to the name of your plugin
+class LRB_Business_Hours extends WP_Widget {
 
     /**
      * @TODO - Rename "lrb_business_hours" to the name your your widget
@@ -54,10 +54,10 @@ class Widget_Name extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'lrb_business_hours',
+			'Widget Name',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Business-hours widget'
+				'description' => 'Business hours widget.'
 			)
 		);
 
@@ -133,7 +133,6 @@ class Widget_Name extends WP_Widget {
 		$instance['monday_friday'] = strip_tags( $new_instance['monday_friday'] );
 		$instance['saturday'] = strip_tags( $new_instance['saturday'] );
 		$instance['sunday'] = strip_tags( $new_instance['sunday'] );
-
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -152,16 +151,16 @@ class Widget_Name extends WP_Widget {
 			(array) $instance,
 			array(
 				'title' => 'Business Hours',
-				'monday_friday' =>'',
-				'saturday'=> '',
+				'monday_friday' => '',
+				'saturday' => '',
 				'sunday' => '',
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$monday_friday = strip_tags ($instance['monday_friday']);
-		$saturday = strip_tags ($instance['saturday']);
-		$sunday = strip_tags ($instance['sunday']);
+		$monday_friday = strip_tags( $instance['monday_friday'] );
+		$saturday = strip_tags( $instance['saturday'] );
+		$sunday = strip_tags( $instance['sunday'] );
 		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form
@@ -171,7 +170,7 @@ class Widget_Name extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Widget_Name' to match the class name definition
+// TODO: Remember to change 'LRB_Business_Hours' to match the class name definition
 add_action( 'widgets_init', function(){
-     register_widget( 'Widget_Name' );
+     register_widget( 'LRB_Business_Hours' );
 });

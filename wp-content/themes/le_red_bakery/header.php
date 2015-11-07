@@ -42,9 +42,10 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						<form id="search-form" name="search" action="/products" method="get">
+					<?php get_search_form(); ?>
+						<!-- <form id="search-form" name="search" action="/products" method="get">
 							<input id="search-input" name="search" type="text" value=" SEARCH ..."><i class="fa fa-search"></i>
-						</form>
+						</form> -->
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

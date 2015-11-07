@@ -27,6 +27,45 @@
 
 
 
+
+.search-form{
+// @include container;
+display: block;
+text-align: right;
+// padding-top: 1rem;
+fieldset {
+	border:none;
+	padding-right: 2rem;
+	padding-top: 1rem;
+	.search-field{
+		border: none;
+	}
+	button{
+	border: none;
+	box-shadow: none;
+	background-color: white;
+	 input{
+		display: block;
+	}
+
+	}
+
+}
+
+	i{ 
+		// padding-right: 2rem; 
+	color:$color__medium-grey-brand;
+
+	}
+// margin: 0 auto;
+}
+
+// .search-input{
+// 	border: none;
+
+// }
+
+
 // Products / taxonomy 
 
 .products{
@@ -170,6 +209,59 @@ padding-left: 5%;
 
 }
 }
+
+.day-of-week{
+color: red;
+}
+// Products - archive page
+
+.product-title{
+	@include container;
+	text-align: center;
+	font-family: $font__headline;
+	h1 { text-transform: uppercase;
+		font-weight: bold;
+		padding-top: 1rem;
+	}
+	p{
+		font-size: 1rem;
+		font-family: $font__main;
+		line-height: 2.5;
+	}
+
+}
+
+.decorative{
+
+}
+
+
+.products-archive{
+	display: flex;
+	@include container;
+	// width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.grid{
+	display: flex;
+	@include container;
+	flex-flow: wrap;
+
+	.productsgrid{
+		width: 25%;
+
+
+	}
+	}
+
+
+
+
+
+
 
 
 // Taxonomy-product-type page

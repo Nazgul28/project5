@@ -733,6 +733,24 @@ object {
     font-size: 6rem;
     text-transform: uppercase; }
 
+.search-form {
+  display: block;
+  text-align: right; }
+  .search-form fieldset {
+    border: none;
+    padding-right: 2rem;
+    padding-top: 1rem; }
+    .search-form fieldset .search-field {
+      border: none; }
+    .search-form fieldset button {
+      border: none;
+      box-shadow: none;
+      background-color: white; }
+      .search-form fieldset button input {
+        display: block; }
+  .search-form i {
+    color: #808080; }
+
 .products {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -853,6 +871,52 @@ ul {
     text-decoration: none;
     color: red; }
 
+.day-of-week {
+  color: red; }
+
+.product-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  text-align: center;
+  font-family: "Overlock", sans-serif; }
+  .product-title h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 1rem; }
+  .product-title p {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 2.5; }
+
+.products-archive {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase; }
+
+.grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap; }
+  .grid .productsgrid {
+    width: 25%; }
+
 .taxonomy-product-type {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -926,17 +990,6 @@ ul {
 .main-navigation li a {
   padding: .75rem 1.5rem;
   color: #808080; }
-
-#search-form {
-  display: block;
-  text-align: right;
-  padding-top: 1rem; }
-  #search-form i {
-    padding-right: 2rem;
-    color: #808080; }
-
-#search-input {
-  border: none; }
 
 .site-footer {
   background-color: #222222; }

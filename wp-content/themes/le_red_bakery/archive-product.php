@@ -11,7 +11,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="products">
+			<div class="product-title">
+				<?php the_archive_title ('<h1>', '</h1>');?>
+				
+				<p> We are a team of creative and talented individuals who love making delicious treats.</p>
+			</div>
+
+			<div class="decorative">
+			</div>
+
+			<div class="products-archive">
 				<?php 
 					$taxonomy = 'product-type';
 					$terms = get_terms($taxonomy);
@@ -29,19 +38,23 @@ get_header(); ?>
 				<?php endif; ?>
 		</div>
 
+	<div class="grid">
 		<?php if ( have_posts() ) : ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 
 			<?php /* Start the Loop */ ?>
-			
-			<div class="grid">
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-				<p class= "price"> Price: <?php echo esc_html ( CFS() -> get ('price')); ?></p>
-
+				
+				<?php if ( has_post_thumbnail() ) : ?>
+				<div class="productsgrid">
+					<?php the_post_thumbnail( 'medium' ); ?>
+				<?php endif; ?>
+				<div class="poductsinfo">
+				<p><?php echo get_the_title( ); ?>
+				<span class= "price"><?php echo esc_html ( CFS() -> get ('price')); ?></span></p>
+				</div>
+				</div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -51,7 +64,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-			</div>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
