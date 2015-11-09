@@ -17,8 +17,7 @@ get_header(); ?>
 				<p> We are a team of creative and talented individuals who love making delicious treats.</p>
 			</div>
 
-			<div class="decorative">
-			</div>
+			<hr class="decorative"::after></hr>
 
 			<div class="products-archive">
 				<?php 
@@ -48,11 +47,12 @@ get_header(); ?>
 				
 				<?php if ( has_post_thumbnail() ) : ?>
 				<div class="productsgrid">
-					<?php the_post_thumbnail( 'medium' ); ?>
+					<a href="<?php the_permalink();?>">
+					<?php the_post_thumbnail( 'medium' ); ?></a>
 				<?php endif; ?>
 				<div class="poductsinfo">
-				<p><?php echo get_the_title( ); ?>
-				<span class= "price"><?php echo esc_html ( CFS() -> get ('price')); ?></span></p>
+					<span class="product-title2"><?php echo get_the_title( ); ?>
+					<span class= "price"><?php echo esc_html ( CFS() -> get ('price')); ?></span></p>
 				</div>
 				</div>
 			<?php endwhile; ?>

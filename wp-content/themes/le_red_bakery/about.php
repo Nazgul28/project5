@@ -3,35 +3,51 @@
 <?php
 /**
  * Template Name: About page.
- * Template: full width.
+ * 
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
-	<div class="site-wrapper">
+	<!-- <div class="site-wrapper"> -->
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<section class="entry-header">
+				<h1 class="entry-title">Learn About Our Team and Culture</h1>
+				<p class= "tagline"><?php echo esc_html( CFS()->get('subtitle')); ?></p>
+			</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<hr class="decorative"::after></hr>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<div class="entry-content">
+				<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php echo CFS()->get( 'title' ); ?>
-				<?php echo CFS()->get( 'team' ); ?>
-				<?php echo CFS()->get( 'bakery' ); ?>
-				<?php echo CFS()->get( 'story' ); ?>
+				<div class="about-parts">
 
-				
+					<section class= "about-parts-item"><?php echo ( CFS()->get('team')); ?></section>
 
+					<section class= "about-parts-item"><?php echo ( CFS()->get('bakery')); ?></section>
 
+				</div>
 
+				<section class= "story"><?php echo ( CFS()->get('story')); ?></section>
+			</div>
 
+			<?php endwhile; ?>
+			<?php endif; ?>
 
-			<?php endwhile; // End of the loop. ?>
+		<section class="warning">
+			<p>
+				<span> Feel free to contact us with any questions coments or suggestions. We even take custom orders!</span>
+				<a href="http://localhost:3000/le_red_bakery/contact/" class="btn"> Contact Us</a>
+			</p>
+		</section>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 
 
 <?php get_footer(); ?>

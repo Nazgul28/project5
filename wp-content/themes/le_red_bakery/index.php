@@ -9,9 +9,8 @@ get_header(); ?>
 	<div class ="blogposts">
 	<div id="primary-1" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<div class="blogposts-items">
 		<?php if ( have_posts() ) : ?>
-
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -32,7 +31,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+	</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

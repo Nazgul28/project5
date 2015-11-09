@@ -9,6 +9,7 @@ get_header(); ?>
 	<div class="wrapper-single-product">
 	<div id="primary-1" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="single-product-area">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -16,7 +17,7 @@ get_header(); ?>
 
 
 		<?php endwhile; // End of the loop. ?>
-
+	</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

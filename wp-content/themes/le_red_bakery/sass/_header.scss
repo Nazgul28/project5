@@ -27,7 +27,6 @@ width:300px;
 
 .main-navigation{
 
-	// @include container;
 	width: 100%;
 	margin-top: $base__space-unit;
 	border-bottom: 1px solid #e1e1e1;
@@ -48,10 +47,31 @@ border-left: 1px solid #e1e1e1;
 
 .main-navigation li a {
     padding: .75rem 1.5rem;
-    // color: #a1a1a1;
+    font-weight: bold;
     color: $color__medium-grey-brand;
 }
 
+fieldset {
+    border: 0;
+    margin-bottom: -18px;
+input.search-field {
+        border: 0;
+        background-color: #fff;
+    }
+}
+
+li:hover a {
+    color: #400c0d;
+}
+
+.main-navigation .current-menu-item:after, .main-navigation .current_page_ancestor:after, .main-navigation .current_page_item:after {
+    content: "";
+    background-color: #db272a;
+    display: block;
+    height: 3px;
+    margin-top: -3px;
+    width: 100%;
+}
 
 
 
