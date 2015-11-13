@@ -1,8 +1,9 @@
 
+<?php /* Template Name: Full width */ ?>
 
 <?php
 /**
- * Template Name: About page.
+ * Template for displaying all pages.
  * 
  *
  * @package RED_Starter_Theme

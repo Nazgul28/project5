@@ -1337,13 +1337,15 @@ fieldset {
 li:hover a {
   color: #400c0d; }
 
-.main-navigation .current-menu-item:after, .main-navigation .current_page_ancestor:after, .main-navigation .current_page_item:after {
+.main-navigation .current-menu-item:after {
   content: "";
   background-color: #db272a;
   display: block;
   height: 3px;
   margin-top: -3px;
-  width: 100%; }
+  width: 100%;
+  li: active;
+    li-color: #400c0d; }
 
 .site-footer {
   background-color: #222222; }
