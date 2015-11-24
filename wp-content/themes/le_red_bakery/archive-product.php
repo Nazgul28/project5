@@ -27,7 +27,6 @@ get_header(); ?>
 					 foreach($terms as $term) :
 					 ?> 
 					 <div class="product-type">
-						 
 						  <a href="<?php echo get_term_link($term); ?>"> 
 						   	<img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $term->slug;?>.png"/></br> 
 						   	<h3><?php echo $term->name;?></h3> </a>

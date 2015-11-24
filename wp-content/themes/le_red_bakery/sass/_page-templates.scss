@@ -226,6 +226,7 @@ fieldset {
 		color: $color__black-brand;
 		font-size: 1rem;
 		line-height: 1.5;
+		padding-left: 0px;
 	}
 	.testimonialscontainer li {
 		display: flex;
@@ -576,6 +577,7 @@ display: flex;
 	.entry-header{
 		text-align: left;
 		margin-bottom: .25rem;
+		padding-top: 1.25rem;
 				}
 	.entry-meta{
 			color: grey;
@@ -643,6 +645,10 @@ display: flex;
 display: flex;
 @include container;
 
+#primary-1 {
+	padding-top: 1.25rem;
+}
+
 .blogposts-items{
 list-style: none;
 .entry-header{
@@ -666,14 +672,69 @@ list-style: none;
 			background-color: transparent;
 			text-decoration: none;
 		}
+	}
+}
 
+}
 
+}
+
+// 404 Page //
+
+.wrapper-404{
+	display: flex;
+	@include container;
+
+#primary-1 {
+font-family: $font__main;
+font-size: 1rem;
+line-height: 1.5;
+color:$color__text-main;
+width:73%;
+border-right: 1px solid #e1e1e1;}
+
+.search-form {
+	text-align: left;
+
+	label{
+		display: block;
+		color: grey;
+		margin-bottom: .5rem;
 	}
 
+	.search-field{
+	color: #666;
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+	padding: .5rem .3rem;
+	}
+
+	.search-submit{
+	border: none;
+    border-radius: 3px;
+    background: #400c0d;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+	}
 }
 
+	ul{list-style-type: none;
+	padding-left: 0;
+    margin-left: 0;
+	line-height: 2rem;
+}
+	a{
+	text-decoration: none;
+	color: red;
+}
 }
 
-}
+
+
+
 
 

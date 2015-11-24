@@ -33,7 +33,7 @@ get_header(); ?>
 		<section class="warning">
 			<p>
 				<span> All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</span>
-				<a href="http://localhost:3000/le_red_bakery/products/" class="btn"> See Our Products</a>
+				<a href="<?php echo home_url('/products/'); ?>" class="btn"> See Our Products </a>
 			</p>
 		</section>
 

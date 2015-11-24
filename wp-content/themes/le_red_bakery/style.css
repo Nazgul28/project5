@@ -638,11 +638,100 @@ a {
   display: none; }
 
 /* Comments */
+.comment-list {
+  margin: 0 0 1.5rem 1.5rem;
+  padding-left: 0px;
+  margin-left: 0px; }
+
+.comment-author-avatar img {
+  border-radius: 50%; }
+
+.fn {
+  font-weight: 700; }
+
+.comment-metadata a {
+  text-decoration: none;
+  color: red; }
+
+.comment-body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.comment-content {
+  padding-left: 1rem;
+  border-bottom: 1px dashed #d2d2d2;
+  padding-bottom: 1.5rem; }
+  .comment-content .reply {
+    display: none; }
+
 .comment-content a {
   word-wrap: break-word; }
 
+.comment-meta {
+  line-height: 2rem; }
+
 .bypostauthor {
   display: block; }
+
+.comment-respond {
+  display: block; }
+  .comment-respond h3 {
+    color: #400c0d;
+    font-size: 1.6rem; }
+  .comment-respond .logged-in-as {
+    margin: 0 0 1.5rem;
+    color: #222; }
+
+.comment-form-author label {
+  color: grey;
+  display: block;
+  margin-bottom: .5rem; }
+  .comment-form-author label span {
+    color: red; }
+
+.comment-form-author input {
+  color: #666;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  width: 49%; }
+
+.comment-form-email label {
+  color: grey;
+  display: block;
+  margin-bottom: .5rem; }
+  .comment-form-email label span {
+    color: red; }
+
+.comment-form-email input {
+  color: #666;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  width: 49%; }
+
+.comment-form-url input {
+  color: #666;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px; }
+
+.comment-form-comment textarea {
+  color: #666;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px; }
+
+.form-submit input {
+  border: none;
+  border-radius: 3px;
+  background: #400c0d;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Media
@@ -913,7 +1002,8 @@ object {
     font-family: "Open Sans", sans-serif;
     color: #222222;
     font-size: 1rem;
-    line-height: 1.5; }
+    line-height: 1.5;
+    padding-left: 0px; }
   .testimonials .testimonialscontainer li {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1212,7 +1302,8 @@ object {
     padding-right: 3rem; }
     .wrapper-single-posts .single-post .entry-header {
       text-align: left;
-      margin-bottom: .25rem; }
+      margin-bottom: .25rem;
+      padding-top: 1.25rem; }
     .wrapper-single-posts .single-post .entry-meta {
       color: grey; }
       .wrapper-single-posts .single-post .entry-meta a {
@@ -1263,6 +1354,8 @@ object {
   margin-left: auto;
   margin-right: auto;
   width: 1024px; }
+  .blogposts #primary-1 {
+    padding-top: 1.25rem; }
   .blogposts .blogposts-items {
     list-style: none; }
     .blogposts .blogposts-items .entry-header {
@@ -1283,6 +1376,50 @@ object {
         font-weight: 700;
         background-color: transparent;
         text-decoration: none; }
+
+.wrapper-404 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px; }
+  .wrapper-404 #primary-1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #404040;
+    width: 73%;
+    border-right: 1px solid #e1e1e1; }
+  .wrapper-404 .search-form {
+    text-align: left; }
+    .wrapper-404 .search-form label {
+      display: block;
+      color: grey;
+      margin-bottom: .5rem; }
+    .wrapper-404 .search-form .search-field {
+      color: #666;
+      background-color: #fafafa;
+      border: 1px solid #e1e1e1;
+      border-radius: 3px;
+      padding: .5rem .3rem; }
+    .wrapper-404 .search-form .search-submit {
+      border: none;
+      border-radius: 3px;
+      background: #400c0d;
+      color: #fff;
+      cursor: pointer;
+      line-height: 1;
+      padding: .75rem 1.5rem;
+      text-decoration: none; }
+  .wrapper-404 ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    line-height: 2rem; }
+  .wrapper-404 a {
+    text-decoration: none;
+    color: red; }
 
 .logo {
   width: 300px; }

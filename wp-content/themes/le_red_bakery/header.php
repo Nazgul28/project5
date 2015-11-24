@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
 
 	<?php wp_head(); ?>
 	</head>
@@ -28,7 +28,9 @@
 				</div>
 				<div class="headerbox">
 					<div class= "logoheader">
-						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg"/>
+						<a href="<?php echo home_url();?>">
+							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg"/>
+						</a>
 					</div>
 					<div class="socialmediaheader">
 							<i class="fa fa-facebook"></i>

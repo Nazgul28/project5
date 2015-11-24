@@ -3,7 +3,7 @@
 
 <?php
 /**
- * Template for displaying all pages.
+ * Template for displaying about page.
  * 
  *
  * @package RED_Starter_Theme
@@ -41,7 +41,7 @@ get_header(); ?>
 		<section class="warning">
 			<p>
 				<span> Feel free to contact us with any questions coments or suggestions. We even take custom orders!</span>
-				<a href="http://localhost:3000/le_red_bakery/contact/" class="btn"> Contact Us</a>
+				<a href="<?php echo home_url('/contact/');?>" class="btn"> Contact Us</a>
 			</p>
 		</section>
 
